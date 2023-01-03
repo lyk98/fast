@@ -3,8 +3,7 @@ package io.github.lyk98.fast.common.enums;
 /**
  * 操作人类别
  *
- * @author 准点下班
- * @date 2023/1/3 9:01
+ * @author ruoyi
  */
 public enum OperatorType {
     /**

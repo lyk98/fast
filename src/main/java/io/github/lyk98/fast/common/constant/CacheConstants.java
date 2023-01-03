@@ -3,14 +3,9 @@ package io.github.lyk98.fast.common.constant;
 /**
  * 缓存的key 常量
  *
- * @author 准点下班
- * @date 2023/1/3 9:04
+ * @author ruoyi
  */
-public final class CacheConstants {
-
-    private CacheConstants() {
-    }
-
+public class CacheConstants {
     /**
      * 登录用户 redis key
      */
@@ -45,5 +40,4 @@ public final class CacheConstants {
      * 登录账户密码错误次数 redis key
      */
     public static final String PWD_ERR_CNT_KEY = "pwd_err_cnt:";
-
 }

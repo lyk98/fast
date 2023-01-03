@@ -3,8 +3,7 @@ package io.github.lyk98.fast.common.enums;
 /**
  * 业务操作类型
  *
- * @author 准点下班
- * @date 2023/1/3 9:00
+ * @author ruoyi
  */
 public enum BusinessType {
     /**
@@ -55,5 +54,5 @@ public enum BusinessType {
     /**
      * 清空数据
      */
-    CLEAN
+    CLEAN,
 }

@@ -1,35 +1,40 @@
 package io.github.lyk98.fast.common.annotation;
 
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 import io.github.lyk98.fast.common.constant.CacheConstants;
 import io.github.lyk98.fast.common.enums.LimitType;
 
-import java.lang.annotation.*;
-
 /**
- * @author 准点下班
- * @date 2023/1/3 9:02
+ * 限流注解
+ *
+ * @author ruoyi
  */
-@Documented
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface RateLimiter {
     /**
      * 限流key
      */
-    String key() default CacheConstants.RATE_LIMIT_KEY;
+    public String key() default CacheConstants.RATE_LIMIT_KEY;
 
     /**
      * 限流时间,单位秒
      */
-    int time() default 60;
+    public int time() default 60;
 
     /**
      * 限流次数
      */
-    int count() default 100;
+    public int count() default 100;
 
     /**
      * 限流类型
      */
-    LimitType limitType() default LimitType.DEFAULT;
+    public LimitType limitType() default LimitType.DEFAULT;
 }
